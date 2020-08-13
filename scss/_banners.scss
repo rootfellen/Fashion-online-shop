@@ -1,0 +1,245 @@
+.promo__banners {
+  display: flex;
+  margin: 0rem -0.9rem;
+
+  @include breakpoint-down(medium) {
+    flex-wrap: wrap;
+  }
+}
+
+.banner {
+  display: flex;
+  flex: 1 0 50%;
+  margin: 0.9rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @include breakpoint-down(medium) {
+    flex: 1 1 100%;
+  }
+}
+
+.promo__banner-01 {
+  background-color: #f9e1e9;
+  background-image: url(/images/banner-02.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.promo__banner-02 {
+  background-color: #cdebf5;
+  background-image: url(/images/banner-01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.promo__banner-wrapper {
+  padding: 3.62rem;
+  @include breakpoint-down(small) {
+    padding: 2.62rem;
+  }
+}
+
+.promo__banner-01 .banner-title {
+  display: inline-block;
+  font-size: 1.33rem;
+  font-weight: 600;
+  background-color: #feecec;
+  padding: 0.68rem;
+}
+
+.promo__banner-info {
+  font-size: 6.56rem;
+  color: #fff;
+  font-weight: 600;
+
+  @include breakpoint-down(medium) {
+    font-size: 3.56rem;
+  }
+
+  @include breakpoint-down(small) {
+    font-size: 2.56rem;
+  }
+}
+
+.banner span {
+  display: block;
+  font-size: $font-md;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 1.875rem;
+}
+
+.promo__banner-link {
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+    color: $seconday-color;
+    border-bottom: 1px solid $seconday-color;
+  }
+}
+
+// Deal Banner
+
+.deal__banner-content {
+  padding: 8.125rem 0rem;
+  display: flex;
+
+  @include breakpoint-down(medium) {
+    flex-direction: column;
+  }
+}
+
+.deal__banner-left-wrapper {
+  padding: 8rem 1rem 8rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @include breakpoint-down(medium) {
+    text-align: center;
+    padding: 8rem 0rem;
+    align-items: center;
+  }
+}
+
+.deal__banner-left {
+  flex: 1 1 50%;
+  background-color: $grey;
+
+  @include breakpoint-down(medium) {
+    flex: 1 1 100%;
+  }
+}
+
+.deal__banner-title {
+  display: inline-block;
+  font-size: 2.46rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 5px;
+  background-color: #c8c290;
+  padding: 1.3rem 1.8rem;
+  margin-bottom: 3.125rem;
+}
+
+.deal__banner-subtitle {
+  font-size: 3.43rem;
+  font-weight: 600;
+  line-height: 4rem;
+  margin-bottom: 6.68rem;
+  max-width: 31.25rem;
+
+  @include breakpoint-down(medium) {
+    margin: 0rem auto 6.68rem auto;
+  }
+}
+
+.deal__banner-product-name {
+  font-size: $font-lg;
+  letter-spacing: -0.5px;
+
+  @include breakpoint-down(small) {
+    max-width: 250px;
+  }
+}
+
+.deal__banner-product-price {
+  font-size: 3.22rem;
+  font-weight: 600;
+  padding-top: 1rem;
+  letter-spacing: 1;
+}
+
+.deal__banner-right {
+  flex: 1 0 50%;
+  background-image: url(/images/banner-03.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 62.5rem;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+// Deal Banner Timer {
+
+.deal__banner-timer {
+  max-width: 700px;
+  display: flex;
+  margin: 0rem -0.78rem;
+  padding: 3.43rem 0rem 3.43rem 0rem;
+  flex: 1 1 auto;
+  @include breakpoint-down(medium) {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 0 auto;
+    margin: 0 auto;
+    max-width: 37.5rem;
+    padding: 3.43rem 0rem;
+  }
+
+  @include breakpoint-down(small) {
+    max-width: 30rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.deal__banner-date,
+.deal__banner-hours,
+.deal__banner-minutes,
+.deal__banner-seconds {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  max-width: 117px;
+  max-height: 117px;
+  border: 1px solid #fff;
+  font-size: 3.23rem;
+  font-weight: 600;
+  padding: 1.25rem 1.875rem;
+  margin: 0rem 0.78rem;
+
+  @include breakpoint-down(medium) {
+    margin: 1rem;
+  }
+
+  @include breakpoint-down(small) {
+    font-size: 2rem;
+    padding: 1rem 1.2rem;
+    flex: 1 0 50%;
+    margin: 1rem;
+  }
+  span {
+    font-size: 0.812rem;
+    text-transform: uppercase;
+  }
+}
+
+.deal__banner-seconds {
+  @include breakpoint-down(large) {
+  }
+}
+
+.deal__banner-cta {
+  padding: 27px 37px;
+  background-color: $seconday-color;
+  font-size: $font-sm;
+}

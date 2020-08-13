@@ -1,0 +1,100 @@
+.hero {
+  position: relative;
+}
+
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.ibg img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hero__content {
+  padding: 18.75rem 0rem;
+  margin-left: 10rem;
+
+  @include breakpoint-down(medium) {
+    margin-left: 5rem;
+  }
+
+  @include breakpoint-down(small) {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+.hero__title {
+  font-size: 13.125rem;
+  font-weight: 500;
+  color: $main-color;
+  line-height: 0.8;
+
+  @include breakpoint-down(medium) {
+    color: white;
+  }
+
+  @include breakpoint-down(small) {
+    color: $seconday-color;
+    font-size: 6.875rem;
+  }
+}
+
+.hero__subtitle {
+  font-size: 3.875rem;
+  color: $main-color;
+  font-weight: 500;
+
+  @include breakpoint-down(medium) {
+    color: white;
+  }
+
+  @include breakpoint-down(small) {
+    color: $seconday-color;
+    font-size: 1.875rem;
+  }
+}
+
+.arrow {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 95%;
+  left: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.arrow:before {
+  position: absolute;
+  content: "";
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  top: 0;
+  left: 100%;
+  margin-left: 0.5rem;
+}
+
+.arrow:after {
+  position: absolute;
+  content: "";
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  top: 0;
+  right: 100%;
+  margin-right: 0.5rem;
+}

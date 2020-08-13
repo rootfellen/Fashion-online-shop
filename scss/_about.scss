@@ -1,0 +1,71 @@
+.about {
+  text-align: center;
+}
+
+.about__title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: $main-color;
+  text-transform: uppercase;
+
+  span {
+    color: $seconday-color;
+  }
+  @include breakpoint-down(small) {
+    font-size: 2rem;
+  }
+}
+
+.about__subtitle {
+  font-size: $font-md;
+  padding: 1.93rem 0rem 3.56rem 0rem;
+
+  @include breakpoint-down(small) {
+    font-size: $font-xs;
+  }
+}
+
+// Instagram section
+
+.about__instagram {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.instagram__post {
+  flex: 0 0 15%;
+  margin: 5px;
+  transition: opacity 200ms ease-in-out;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  img {
+    max-width: 14.06rem;
+  }
+}
+
+//  Cards Section
+
+.about__cards {
+  display: flex;
+  flex-wrap: wrap;
+  @include breakpoint-down(small) {
+    padding-top: 1rem;
+  }
+}
+
+.about__card {
+  flex: 1 0 25%;
+  padding: 6.25rem 0rem 4.375rem 0rem;
+
+  @include breakpoint-down(small) {
+    padding: 1.56rem 0rem;
+  }
+}
+
+.about__card-text {
+  padding: 1.875rem;
+}

@@ -1,0 +1,81 @@
+.subscribe {
+  background-color: $lightgrey;
+  text-align: center;
+}
+
+.subscribe__wrapper {
+  padding: 6.25rem 0rem;
+}
+
+.subscribe__title {
+  font-size: 3rem;
+  color: $main-color;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  @include breakpoint-down(small) {
+    font-size: 2rem;
+  }
+}
+
+.subscribe__subtitle {
+  font-size: $font-md;
+  padding: 2.18rem 0rem 3.43rem 0rem;
+}
+
+.subsrcibe__form-input-group {
+  display: flex;
+  max-width: 32.5rem;
+  margin: 0 auto;
+
+  @include breakpoint-down(small) {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 1rem;
+  }
+}
+
+.form-control {
+  padding: 1.125rem;
+  font-size: 1rem;
+  color: $main-color;
+  font-weight: 500;
+  border: 1px solid $main-color;
+  flex: 1 1 70%;
+  margin-right: 0.7rem;
+
+  @include breakpoint-down(small) {
+    margin-right: 0;
+    margin-bottom: 1.2rem;
+  }
+}
+
+.form-control::placeholder {
+  font-size: 1rem;
+  color: $main-color;
+  opacity: 1;
+  font-weight: 400;
+}
+
+.btn__subscribe {
+  background-color: $seconday-color;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: $main-color;
+  padding: 1.3rem;
+  height: 100%;
+  flex: 1 1 auto;
+}
+
+.btn__subscribe {
+  font-size: 0.875rem;
+  color: $main-color;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: opacity 200ms ease-in-out;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}

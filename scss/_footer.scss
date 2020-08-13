@@ -1,0 +1,131 @@
+.footer {
+  font-size: $font-xs;
+  color: $brightgrey;
+}
+
+.footer__wrapper {
+  padding: 3.375rem 1.125rem;
+  max-width: 68.75rem;
+  margin: 0 auto;
+}
+
+.footer__content {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include breakpoint-down(medium) {
+  }
+}
+
+.payment__system,
+.footer__customer-service,
+.footer__social,
+.footer__contacts {
+  flex: 1 1 25%;
+
+  @include breakpoint-down(medium) {
+    flex: 1 1 33.3333%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  @include breakpoint-down(small) {
+    flex: 1 1 100%;
+    margin-bottom: 3rem;
+  }
+}
+
+.payment__system {
+  @include breakpoint-down(medium) {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    margin-bottom: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.footer__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: $main-color;
+  text-transform: uppercase;
+  margin-bottom: 2.68rem;
+
+  @include breakpoint-down(small) {
+    margin-bottom: 2rem;
+  }
+}
+.payment__system-list {
+  margin-top: 3.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.payment__system-link {
+  padding: 0rem 1.25rem 0rem 0rem;
+
+  &:last-child {
+    padding: 0;
+  }
+}
+
+.customer__service-menu-link,
+.social__menu-link,
+.contacts__menu-link {
+  font-size: $font-xs;
+  color: $brightgrey;
+
+  &:hover {
+    text-decoration: underline;
+    color: $main-color;
+  }
+}
+
+.customer__service-menu li,
+.social__menu li,
+.contacts__menu li {
+  margin: 0rem 0rem 1rem 0rem;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.footer__contacts {
+  @include breakpoint-down(medium) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.contacts__menu {
+  @include breakpoint-down(medium) {
+  }
+}
+
+.contacts__menu-link {
+  display: flex;
+  align-items: center;
+
+  img {
+    padding-right: 1.43rem;
+  }
+}
+
+.footer__content {
+  margin-bottom: 6.875rem;
+  @include breakpoint-down(small) {
+    margin-bottom: 3.875rem;
+  }
+}
+
+.copyright {
+  @include breakpoint-down(medium) {
+    text-align: center;
+  }
+}

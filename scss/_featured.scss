@@ -1,0 +1,115 @@
+.featured .wrapper {
+  padding: 0rem 0rem 6rem 0rem;
+}
+
+.section__title {
+  display: inline-block;
+  font-size: $font-xl;
+  font-weight: 500;
+  color: $main-color;
+  border-bottom: 3px solid $main-color;
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.125rem -1.25rem 0rem -1.25rem;
+}
+
+.products__list-item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 25%;
+  padding: 1.25rem;
+  align-items: center;
+  text-align: center;
+
+  @include breakpoint-down(medium) {
+    flex: 0 0 50%;
+  }
+
+  @include breakpoint-down(small) {
+    flex: 0 0 100%;
+  }
+}
+
+.product__image {
+  flex: 0 0 auto;
+  max-width: 270px;
+}
+
+.product__rate {
+  margin: 1.56rem 0rem;
+
+  a {
+    color: $seconday-color;
+    transition: opacity 200ms ease-in-out;
+    opacity: 0.35;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.product__price {
+  font-size: $font-lg;
+  font-weight: 600;
+  margin: 1.56rem 0rem;
+  flex: 0 0 auto;
+  max-width: 200px;
+}
+
+.featured__products {
+  margin-bottom: 107px;
+}
+
+// Fashion Shop Banner
+
+.fashionshop__banner-content {
+  padding: 6.68rem 0rem;
+  text-align: center;
+
+  @include breakpoint-down(small) {
+    padding: 2.68rem 0rem;
+  }
+}
+
+.fashionshop__banner-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+
+  @include breakpoint-down(small) {
+    display: inline-block;
+    font-size: 2rem;
+    max-width: 50rem;
+  }
+}
+
+.fashionshop__banner-subtitle {
+  font-size: $font-md;
+  color: $main-color;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  padding: 3.125rem 0rem;
+
+  @include breakpoint-down(small) {
+    font-size: $font-xs;
+  }
+}
+
+.fashionshop__banner-cta {
+  font-size: $font-md;
+  color: $main-color;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #ffff00;
+  padding: 0.937rem;
+  transition: opacity 200ms ease-in-out;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
