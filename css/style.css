@@ -817,7 +817,7 @@ body.lock {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
-  background-image: url(/images/banner-03.png);
+  background-image: url(../images/banner-03.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
